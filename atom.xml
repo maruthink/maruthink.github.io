@@ -34,7 +34,7 @@
  <title>Maru</title>
  <link href="https://maruthink.github.io/atom.xml" rel="self"/>
  <link href="https://maruthink.github.io/"/>
- <updated>2020-02-15T16:12:29+00:00</updated>
+ <updated>2020-02-15T16:36:18+00:00</updated>
  <id>https://maruthink.github.io</id>
  <author>
    <name></name>
@@ -47,7 +47,8 @@
    <link href="https://maruthink.github.io/2020/02/14/firstPost.html"/>
    <updated>2020-02-14T00:00:00+00:00</updated>
    <id>https://maruthink.github.io/2020/02/14/firstPost</id>
-   <content type="html">&lt;p&gt;建立了一個紀錄每天所學所思的空間&lt;/p&gt;
+   <content type="html">&lt;p&gt;建立了一個紀錄每天所學所思的空間&lt;br /&gt;
+希望以此部落格來訓練思維&lt;/p&gt;
 </content>
  </entry>
  
