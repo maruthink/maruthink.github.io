@@ -1,23 +1,46 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
 title: Maru
+author: GitHub User
 email: workagile@outlook.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  Record what I learned, what I thought... everyday.
+show_excerpts: false # set to true to show excerpts on the homepage
 
-#write html inside the double quotes to display in jumbotron
-description: "<h3>Hello, world!</h3><h1>Dev&Test Journal</h1><h3>This is Maru's diary</h3>"
+paginate: 2
+paginate_path: "/blog/page:num/"
 
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
 
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  date_format: "%b %-d, %Y"
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gitmaruneko.github.io" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
-github_username:  gitmaruneko
+  disqus:
+    shortname: agilemaru
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://github.com/gitmaruneko
+      icon: github-square
+      color: green
+    - url: https://twitter.com/thinkagile
+      icon: twitter-square
+      color: cyan
+    - url: https://www.facebook.com/discretentut
+      icon: facebook-square
+      color: blue
+
 
 # Build settings
-markdown: kramdown
+theme: jekyll-dash
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - liquid-md5
+ - jekyll/tagging
+
