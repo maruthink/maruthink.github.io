@@ -1,3 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-02-15T16:36:18+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-02-16T07:52:14+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
 </subtitle><author><name>maruthink</name></author><entry><title type="html">My First Post</title><link href="https://maruthink.github.io/2020/02/14/firstPost.html" rel="alternate" type="text/html" title="My First Post" /><published>2020-02-14T00:00:00+00:00</published><updated>2020-02-14T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/02/14/firstPost</id><content type="html" xml:base="https://maruthink.github.io/2020/02/14/firstPost.html">&lt;p&gt;建立了一個紀錄每天所學所思的空間&lt;br /&gt;
-希望以此部落格來訓練思維&lt;/p&gt;</content><author><name>maruthink</name></author><category term="other" /><summary type="html">建立了一個紀錄每天所學所思的空間 希望以此部落格來訓練思維</summary></entry></feed>
+希望以此部落格來訓練思維&lt;/p&gt;
+
+&lt;p&gt;原本就打算今年要好好培養寫作習慣&lt;br /&gt;
+在看了以下兩篇文章之後, 才決定要弄一個每日學習記錄空間&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dotblogs.com.tw/hatelove/2017/03/26/why-engineers-should-keep-blogging&quot;&gt;我為什麼鼓勵工程師寫blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/hulis-blog/why-blogging-ab77fd8c6ffa&quot;&gt;每一篇心得都有價值&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;藉由這個空間幫助自己培養以一個有系統, 有組織的方式來呈現內化後的知識&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;When people ask me for advice on blogging,  
+I always respond with yet another form of the same advice:  
+pick a schedule you can live with, and stick to it.   
+Until you do that, none of the other advice I could give you will matter.   
+I don't care if you suck at writing.   
+I don't care if nobody reads your blog.   
+I don't care if you have nothing interesting to say.   
+If you can demonstrate a willingness to write,   
+and a desire to keep continually improving your writing,   
+you will eventually be successful.  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>maruthink</name></author><category term="other" /><summary type="html">建立了一個紀錄每天所學所思的空間 希望以此部落格來訓練思維</summary></entry></feed>
