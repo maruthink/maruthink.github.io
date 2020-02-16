@@ -34,7 +34,7 @@
  <title>Maru</title>
  <link href="https://maruthink.github.io/atom.xml" rel="self"/>
  <link href="https://maruthink.github.io/"/>
- <updated>2020-02-16T07:56:58+00:00</updated>
+ <updated>2020-02-16T08:09:22+00:00</updated>
  <id>https://maruthink.github.io</id>
  <author>
    <name></name>
@@ -47,20 +47,16 @@
    <link href="https://maruthink.github.io/2020/02/14/firstPost.html"/>
    <updated>2020-02-14T00:00:00+00:00</updated>
    <id>https://maruthink.github.io/2020/02/14/firstPost</id>
-   <content type="html">&lt;p&gt;建立了一個紀錄每天所學所思的空間&lt;br /&gt;
+   <content type="html">&lt;p&gt;原本就打算今年要好好培養寫作習慣&lt;br /&gt;
+在看了以下幾篇文章之後, 才決定要弄一個每日學習記錄空間&lt;br /&gt;
 希望以此部落格來訓練思維&lt;/p&gt;
 
-&lt;p&gt;原本就打算今年要好好培養寫作習慣&lt;br /&gt;
-在看了以下兩篇文章之後, 才決定要弄一個每日學習記錄空間&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://teddy-chen-tw.blogspot.com/2016/04/blog-post_28.html&quot;&gt;刻意練習&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/hulis-blog/why-blogging-ab77fd8c6ffa&quot;&gt;每一篇心得都有價值&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dotblogs.com.tw/hatelove/2017/03/26/why-engineers-should-keep-blogging&quot;&gt;我為什麼鼓勵工程師寫blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;刻意練習&quot;&gt;&lt;a href=&quot;http://teddy-chen-tw.blogspot.com/2016/04/blog-post_28.html&quot;&gt;刻意練習&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;每一篇心得都有價值&quot;&gt;&lt;a href=&quot;https://medium.com/hulis-blog/why-blogging-ab77fd8c6ffa&quot;&gt;每一篇心得都有價值&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;我為什麼鼓勵工程師寫blog&quot;&gt;&lt;a href=&quot;https://dotblogs.com.tw/hatelove/2017/03/26/why-engineers-should-keep-blogging&quot;&gt;我為什麼鼓勵工程師寫blog&lt;/a&gt;&lt;/h3&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;藉由這個空間幫助自己培養以一個有系統, 有組織的方式來呈現內化後的知識&lt;/p&gt;
+  &lt;p&gt;藉由這個空間培養自己能以一個有系統, 有組織的方式來呈現內化後的知識&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;When people ask me for advice on blogging,  
