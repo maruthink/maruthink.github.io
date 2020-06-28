@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>404: Page not found | Maru</title>
-<meta name="generator" content="Jekyll v3.8.6" />
+<meta name="generator" content="Jekyll v3.8.7" />
 <meta property="og:title" content="404: Page not found" />
 <meta name="author" content="maruthink" />
 <meta property="og:locale" content="en_US" />
@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://maruthink.github.io/404.html" />
 <meta property="og:site_name" content="Maru" />
 <script type="application/ld+json">
-{"description":"Record what I learned, what I thought… everyday.","headline":"404: Page not found","@type":"WebPage","url":"https://maruthink.github.io/404.html","author":{"@type":"Person","name":"maruthink"},"@context":"https://schema.org"}</script>
+{"description":"Record what I learned, what I thought… everyday.","@type":"WebPage","url":"https://maruthink.github.io/404.html","headline":"404: Page not found","author":{"@type":"Person","name":"maruthink"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://maruthink.github.io/feed.xml" title="Maru" /></head>
@@ -54,13 +54,11 @@
 </div>
 <script type="text/javascript">
 const theme = localStorage.getItem('theme');
-if (theme === 'undefined') {
-   theme = "dark";
-}
-if (theme === "dark") {
-	document.documentElement.setAttribute('data-theme', 'dark');
-} else {
+
+if (theme === "light") {
     document.documentElement.setAttribute('data-theme', 'light');
+} else {
+    document.documentElement.setAttribute('data-theme', 'dark');
 }
 const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
 
