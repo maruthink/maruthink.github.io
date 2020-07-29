@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Maru | Record what I learned, what I thought… everyday.</title>
-<meta name="generator" content="Jekyll v3.8.7" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Maru" />
 <meta name="author" content="maruthink" />
 <meta property="og:locale" content="en_US" />
@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://maruthink.github.io/atom.xml" />
 <meta property="og:site_name" content="Maru" />
 <script type="application/ld+json">
-{"description":"Record what I learned, what I thought… everyday.","@type":"WebPage","url":"https://maruthink.github.io/atom.xml","headline":"Maru","author":{"@type":"Person","name":"maruthink"},"@context":"https://schema.org"}</script>
+{"description":"Record what I learned, what I thought… everyday.","@type":"WebPage","headline":"Maru","url":"https://maruthink.github.io/atom.xml","author":{"@type":"Person","name":"maruthink"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://maruthink.github.io/feed.xml" title="Maru" /></head>
@@ -34,13 +34,78 @@
  <title>Maru</title>
  <link href="https://maruthink.github.io/atom.xml" rel="self"/>
  <link href="https://maruthink.github.io/"/>
- <updated>2020-06-28T08:12:26+00:00</updated>
+ <updated>2020-07-29T09:19:07+00:00</updated>
  <id>https://maruthink.github.io</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>K8S練習-00</title>
+   <link href="https://maruthink.github.io/2020/07/29/DevOpsK8S.html"/>
+   <updated>2020-07-29T00:00:00+00:00</updated>
+   <id>https://maruthink.github.io/2020/07/29/DevOpsK8S</id>
+   <content type="html">&lt;p&gt;專案越OWN越多, JENKINS上的工作越長越多&lt;br /&gt;
+需要更有效率的管理方式&lt;br /&gt;
+趁這次正好練習一下 kubernetes&lt;/p&gt;
+
+&lt;p&gt;在使用kubernetes之前, 最好也熟悉docker&lt;br /&gt;
+包含指令的使用以及建立docker image&lt;/p&gt;
+&lt;h3 id=&quot;-建立docker-image&quot;&gt;* &lt;a href=&quot;https://blog.gtwang.org/virtualization/docker-basic-tutorial/2/&quot;&gt;建立Docker image&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;-kubernetesru-基礎介紹&quot;&gt;* &lt;a href=&quot;https://www.inwinstack.com/2018/05/08/what-is-kubernetes-part2/&quot;&gt;Kubernetesru 基礎介紹&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;-kubernetesru-kubernetes-基礎教學二實作範例podservicedeploymentingress&quot;&gt;* &lt;a href=&quot;https://medium.com/@C.W.Hu/kubernetes-implement-ingress-deployment-tutorial-7431c5f96c3e&quot;&gt;Kubernetesru Kubernetes 基礎教學（二）實作範例：Pod、Service、Deployment、Ingress&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;跟著上面的範例一步步&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;安裝環境&lt;/li&gt;
+  &lt;li&gt;建立Docker image&lt;/li&gt;
+  &lt;li&gt;啟動Minikube&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;foto-legenda&quot;&gt;
+	&lt;img src=&quot;/assets/2020/2020072900.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;建立k8s pod&lt;/li&gt;
+  &lt;li&gt;可以在&lt;a href=&quot;https://ithelp.ithome.com.tw/articles/10195385&quot;&gt;minikube dashboard&lt;/a&gt;看到Pod狀況&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;foto-legenda&quot;&gt;
+	&lt;img src=&quot;/assets/2020/2020072901.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;發現怎麼Pod有點狀況, 可以在dashboard看到fail log,&lt;br /&gt;
+才知道是我的image name 設錯了
+    &lt;figure class=&quot;foto-legenda&quot;&gt;
+  &lt;img src=&quot;/assets/2020/2020072902.jpg&quot; /&gt;
+&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;改正後, 小鯨魚出現了, 開心
+    &lt;figure class=&quot;foto-legenda&quot;&gt;
+  &lt;img src=&quot;/assets/2020/2020072903.jpg&quot; /&gt;
+&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Deployment : 複製多個相同的Pod
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;了解了 Service 後，接下來要來暸解第二個進階元件：Deployment。今天當我們同時要把一個 Pod 做橫向擴展，也就是複製多個相同的 Pod 在 Cluster 中同時提供服務，並監控如果有 Pod 當機我們就要重新把它啟動時，如果我們要一個 Pod 一個 Pod 透過指令建立並監控是很花時間的。因此，我們可以透過 Deployment 這個特殊元件幫我們達成上述的要求。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;編寫deployment.yaml後, 成功複製出Pod&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;figure class=&quot;foto-legenda&quot;&gt;
+  &lt;img src=&quot;/assets/2020/2020072904.jpg&quot; /&gt;
+&lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;下次練習 : Ingress (一群Pod要如何被連線及存取)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Google的Python認證</title>
@@ -127,7 +192,7 @@ Google著實為初接觸PYTHON的學習者規劃了一套很不錯的學習地�
 (好拗口…)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;When people ask me for advice on blogging,  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;When people ask me for advice on blogging,  
 I always respond with yet another form of the same advice:  
 pick a schedule you can live with, and stick to it.   
 Until you do that, none of the other advice I could give you will matter.   
