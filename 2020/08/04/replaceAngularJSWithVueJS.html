@@ -3,18 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Maru | Record what I learned, what I thought… everyday.</title>
+<title>在OpenBMC中抽換GUI包 | Maru</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Maru" />
+<meta property="og:title" content="在OpenBMC中抽換GUI包" />
 <meta name="author" content="maruthink" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Record what I learned, what I thought… everyday." />
 <meta property="og:description" content="Record what I learned, what I thought… everyday." />
-<link rel="canonical" href="https://maruthink.github.io/tag/devops/" />
-<meta property="og:url" content="https://maruthink.github.io/tag/devops/" />
+<link rel="canonical" href="https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS.html" />
+<meta property="og:url" content="https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS.html" />
 <meta property="og:site_name" content="Maru" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-04T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"Record what I learned, what I thought… everyday.","@type":"WebPage","headline":"Maru","url":"https://maruthink.github.io/tag/devops/","author":{"@type":"Person","name":"maruthink"},"@context":"https://schema.org"}</script>
+{"description":"Record what I learned, what I thought… everyday.","@type":"BlogPosting","headline":"在OpenBMC中抽換GUI包","dateModified":"2020-08-04T00:00:00+00:00","datePublished":"2020-08-04T00:00:00+00:00","url":"https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS.html"},"author":{"@type":"Person","name":"maruthink"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" type="image/png" href="/assets/favicon.png" /><link type="application/atom+xml" rel="alternate" href="https://maruthink.github.io/feed.xml" title="Maru" /></head>
@@ -41,70 +43,135 @@ Record what I learned, what I thought... everyday.
 </div>
 
 
-<h1 class="post-title">articles tagged with <a class="tag" href="/tag/devops/">devops</a></h1>
-  <div class="post-links">
+<div class="post">
+  <h1 class="post-title">在OpenBMC中抽換GUI包</h1>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-      <div class="post-link-wrapper">
-        <a href="/2020/07/29/DevOpsK8S.html" class="post-link">K8S練習-00</a>
-        <div class="post-meta">
-
-          <div class="post-tags">
-              
-              <a class="tag" href="/tag/devops/">devops</a>
-              
-              <a class="tag" href="/tag/study/">study</a>
-              
-          </div>
-          
-            Jul 29, 2020
-          
-        </div>
-
-        </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
+  <div class="post-tags">
+      
+      <a class="tag" href="/tag/openbmc/">openbmc</a>
+      
+      <a class="tag" href="/tag/web/">web</a>
+      
+      <a class="tag" href="/tag/yocto/">yocto</a>
+      
+      <a class="tag" href="/tag/bitbake/">bitbake</a>
+      
+      <a class="tag" href="/tag/vuejs/">vuejs</a>
+      
+      <a class="tag" href="/tag/angularjs/">angularjs</a>
+      
   </div>
   
+  <div class="post-date">Published on 04 Aug 2020</div>
+  
+  <div class="post-description"></div>
+  
+  <p>OpenBMC專案是Linux foudation和一些企業針對BMC(Baseboard Management Controllers)合作的開源專案<br />
+由於編譯後可以使用QEMU運行<br />
+如果要貢獻WEB專案, 這點還挺方便的</p>
+
+<p>原本的WEB部分係採用<a href="https://github.com/openbmc/docs/blob/master/development/web-ui.md">AngularJS框架開發的專案</a>  <br />
+據官網指出明年六月後, 建議改為採用VueJS框架開發<br />
+<a href="https://github.com/openbmc/phosphor-webui/blob/master/README.md">詳見此說明</a><br />
+(反正都是WEB新手, 現在直接學習VueJS好像幸福點 XDD)</p>
+
+<p>OpenBMC專案的編譯方式採用Yocto以及bitbake進行設定及編譯 <br />
+因此抽換此WEB包需要編寫*.bb檔案</p>
+
+<ul>
+  <li>至WEBGUI編譯路徑, 複製原有的bb file修改
+    <blockquote>
+      <p>cd  ./meta-phosphor/recipes-phosphor/webui/<br />
+cp phosphor-webui_git.bb webui-vue_git.bb</p>
+    </blockquote>
+  </li>
+  <li>修改git repo, 以及commit ID
+    <figure class="foto-legenda">
+  <img src="/assets/2020/2020080401.jpg" />
+</figure>
+  </li>
+  <li>指定要編譯的webui<br />
+在meta-XXXX路徑下, 找到要編譯的*.bbappend檔案  <br />
+將 phosphor-webui 改為 <strong>webui-vue</strong>
+    <figure class="foto-legenda">
+  <img src="/assets/2020/2020080402.jpg" />
+</figure>
+  </li>
+  <li>編譯過程中, 可能會遇到工具版本需要更新的情況, <br />
+例如nodejs, 這些都要更新到專案包中的bin folder下<br />
+完成後, 開啟QEMU就可以看到新介面啦~~
+    <figure class="foto-legenda">
+  <img src="/assets/2020/2020080403.jpg" />
+</figure>
+  </li>
+  <li>原本的介面是這樣
+    <figure class="foto-legenda">
+  <img src="/assets/2020/2020080404.jpg" />
+</figure>
+  </li>
+</ul>
+
+
+</div>
+
+
+<div class="comments">
+<div id="disqus_thread"></div>
+<script>
+ var disqus_config = function () {
+     this.page.url = 'https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS.html';
+     this.page.identifier = '/2020/08/04/replaceAngularJSWithVueJS';
+     this.page.title = '在OpenBMC中抽換GUI包';
+ };
+
+ (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+     var d = document, s = d.createElement('script');
+
+     s.src = '//agilemaru.disqus.com/embed.js';
+
+     s.setAttribute('data-timestamp', +new Date());
+     (d.head || d.body).appendChild(s);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+
+
+<div class="related">
+  <h2>related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2020/08/04/gitTagAndBranch.html">
+            Git Tag 和 Branch name重複了
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2020/07/29/DevOpsK8S.html">
+            K8S練習-00
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2020/06/28/pythonCertificateOfGoogle.html">
+            Google的Python認證
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
 
 
   

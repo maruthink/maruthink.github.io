@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-08-04T07:07:05+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-08-04T08:21:11+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
 </subtitle><author><name>maruthink</name></author><entry><title type="html">Git Tag 和 Branch name重複了</title><link href="https://maruthink.github.io/2020/08/04/gitTagAndBranch.html" rel="alternate" type="text/html" title="Git Tag 和 Branch name重複了" /><published>2020-08-04T00:00:00+00:00</published><updated>2020-08-04T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/08/04/gitTagAndBranch</id><content type="html" xml:base="https://maruthink.github.io/2020/08/04/gitTagAndBranch.html">&lt;p&gt;設定GitLab 同步mirror時&lt;br /&gt;
 一直發生如下錯誤&lt;/p&gt;
 &lt;figure class=&quot;foto-legenda&quot;&gt;
@@ -23,7 +23,50 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;執行後, 所有內容都mirror過去啦!&lt;/p&gt;</content><author><name>maruthink</name></author><category term="git" /><category term="study" /><category term="gitlab" /><category term="mirror" /><summary type="html">設定GitLab 同步mirror時 一直發生如下錯誤</summary></entry><entry><title type="html">K8S練習-00</title><link href="https://maruthink.github.io/2020/07/29/DevOpsK8S.html" rel="alternate" type="text/html" title="K8S練習-00" /><published>2020-07-29T00:00:00+00:00</published><updated>2020-07-29T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/07/29/DevOpsK8S</id><content type="html" xml:base="https://maruthink.github.io/2020/07/29/DevOpsK8S.html">&lt;p&gt;專案越OWN越多, JENKINS上的工作越長越多&lt;br /&gt;
+&lt;p&gt;執行後, 所有內容都mirror過去啦!&lt;/p&gt;</content><author><name>maruthink</name></author><category term="git" /><category term="study" /><category term="gitlab" /><category term="mirror" /><summary type="html">設定GitLab 同步mirror時 一直發生如下錯誤</summary></entry><entry><title type="html">在OpenBMC中抽換GUI包</title><link href="https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS.html" rel="alternate" type="text/html" title="在OpenBMC中抽換GUI包" /><published>2020-08-04T00:00:00+00:00</published><updated>2020-08-04T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS</id><content type="html" xml:base="https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS.html">&lt;p&gt;OpenBMC專案是Linux foudation和一些企業針對BMC(Baseboard Management Controllers)合作的開源專案&lt;br /&gt;
+由於編譯後可以使用QEMU運行&lt;br /&gt;
+如果要貢獻WEB專案, 這點還挺方便的&lt;/p&gt;
+
+&lt;p&gt;原本的WEB部分係採用&lt;a href=&quot;https://github.com/openbmc/docs/blob/master/development/web-ui.md&quot;&gt;AngularJS框架開發的專案&lt;/a&gt;  &lt;br /&gt;
+據官網指出明年六月後, 建議改為採用VueJS框架開發&lt;br /&gt;
+&lt;a href=&quot;https://github.com/openbmc/phosphor-webui/blob/master/README.md&quot;&gt;詳見此說明&lt;/a&gt;&lt;br /&gt;
+(反正都是WEB新手, 現在直接學習VueJS好像幸福點 XDD)&lt;/p&gt;
+
+&lt;p&gt;OpenBMC專案的編譯方式採用Yocto以及bitbake進行設定及編譯 &lt;br /&gt;
+因此抽換此WEB包需要編寫*.bb檔案&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;至WEBGUI編譯路徑, 複製原有的bb file修改
+    &lt;blockquote&gt;
+      &lt;p&gt;cd  ./meta-phosphor/recipes-phosphor/webui/&lt;br /&gt;
+cp phosphor-webui_git.bb webui-vue_git.bb&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;修改git repo, 以及commit ID
+    &lt;figure class=&quot;foto-legenda&quot;&gt;
+  &lt;img src=&quot;/assets/2020/2020080401.jpg&quot; /&gt;
+&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;指定要編譯的webui&lt;br /&gt;
+在meta-XXXX路徑下, 找到要編譯的*.bbappend檔案  &lt;br /&gt;
+將 phosphor-webui 改為 &lt;strong&gt;webui-vue&lt;/strong&gt;
+    &lt;figure class=&quot;foto-legenda&quot;&gt;
+  &lt;img src=&quot;/assets/2020/2020080402.jpg&quot; /&gt;
+&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;編譯過程中, 可能會遇到工具版本需要更新的情況, &lt;br /&gt;
+例如nodejs, 這些都要更新到專案包中的bin folder下&lt;br /&gt;
+完成後, 開啟QEMU就可以看到新介面啦~~
+    &lt;figure class=&quot;foto-legenda&quot;&gt;
+  &lt;img src=&quot;/assets/2020/2020080403.jpg&quot; /&gt;
+&lt;/figure&gt;
+  &lt;/li&gt;
+  &lt;li&gt;原本的介面是這樣
+    &lt;figure class=&quot;foto-legenda&quot;&gt;
+  &lt;img src=&quot;/assets/2020/2020080404.jpg&quot; /&gt;
+&lt;/figure&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>maruthink</name></author><category term="openbmc" /><category term="web" /><category term="yocto" /><category term="bitbake" /><category term="vuejs" /><category term="angularjs" /><summary type="html">OpenBMC專案是Linux foudation和一些企業針對BMC(Baseboard Management Controllers)合作的開源專案 由於編譯後可以使用QEMU運行 如果要貢獻WEB專案, 這點還挺方便的</summary></entry><entry><title type="html">K8S練習-00</title><link href="https://maruthink.github.io/2020/07/29/DevOpsK8S.html" rel="alternate" type="text/html" title="K8S練習-00" /><published>2020-07-29T00:00:00+00:00</published><updated>2020-07-29T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/07/29/DevOpsK8S</id><content type="html" xml:base="https://maruthink.github.io/2020/07/29/DevOpsK8S.html">&lt;p&gt;專案越OWN越多, JENKINS上的工作越長越多&lt;br /&gt;
 需要更有效率的管理方式&lt;br /&gt;
 趁這次正好練習一下 kubernetes&lt;/p&gt;
 
