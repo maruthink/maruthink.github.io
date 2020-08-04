@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-08-04T08:30:02+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-08-04T08:36:11+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
 </subtitle><author><name>maruthink</name></author><entry><title type="html">Git Tag 和 Branch name重複了</title><link href="https://maruthink.github.io/2020/08/04/gitTagAndBranch.html" rel="alternate" type="text/html" title="Git Tag 和 Branch name重複了" /><published>2020-08-04T00:00:00+00:00</published><updated>2020-08-04T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/08/04/gitTagAndBranch</id><content type="html" xml:base="https://maruthink.github.io/2020/08/04/gitTagAndBranch.html">&lt;p&gt;設定GitLab 同步mirror時&lt;br /&gt;
 一直發生如下錯誤&lt;/p&gt;
 &lt;figure class=&quot;foto-legenda&quot;&gt;
@@ -11,10 +11,10 @@
 
 &lt;ul&gt;
   &lt;li&gt;首先保存要更名的分支內容&lt;br /&gt;
-&amp;gt; git checkout -b $new_branch_name origin/$branch_name&lt;/li&gt;
+  &amp;gt; git checkout -b $new_branch_name origin/$branch_name&lt;/li&gt;
   &lt;li&gt;刪除遠端分支&lt;/li&gt;
   &lt;li&gt;push新的分支&lt;br /&gt;
-&amp;gt; git push $new_branch_name&lt;/li&gt;
+  &amp;gt; git push $new_branch_name&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;執行後, 所有內容都mirror過去啦!&lt;/p&gt;</content><author><name>maruthink</name></author><category term="git" /><category term="study" /><category term="gitlab" /><category term="mirror" /><summary type="html">設定GitLab 同步mirror時 一直發生如下錯誤</summary></entry><entry><title type="html">在OpenBMC中抽換GUI包</title><link href="https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS.html" rel="alternate" type="text/html" title="在OpenBMC中抽換GUI包" /><published>2020-08-04T00:00:00+00:00</published><updated>2020-08-04T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS</id><content type="html" xml:base="https://maruthink.github.io/2020/08/04/replaceAngularJSWithVueJS.html">&lt;p&gt;OpenBMC專案是Linux foudation和一些企業針對BMC(Baseboard Management Controllers)合作的開源專案&lt;br /&gt;
@@ -31,8 +31,8 @@
 
 &lt;ul&gt;
   &lt;li&gt;至WEBGUI編譯路徑, 複製原有的bb file修改  &lt;br /&gt;
-&amp;gt; cd  ./meta-phosphor/recipes-phosphor/webui/&lt;br /&gt;
-&amp;gt; cp phosphor-webui_git.bb webui-vue_git.bb&lt;/li&gt;
+  &amp;gt; cd  ./meta-phosphor/recipes-phosphor/webui/&lt;br /&gt;
+  &amp;gt; cp phosphor-webui_git.bb webui-vue_git.bb&lt;/li&gt;
   &lt;li&gt;修改git repo, 以及commit ID
     &lt;figure class=&quot;foto-legenda&quot;&gt;
   &lt;img src=&quot;/assets/2020/2020080401.jpg&quot; /&gt;
