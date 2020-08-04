@@ -1,5 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-07-29T09:26:42+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
-</subtitle><author><name>maruthink</name></author><entry><title type="html">K8S練習-00</title><link href="https://maruthink.github.io/2020/07/29/DevOpsK8S.html" rel="alternate" type="text/html" title="K8S練習-00" /><published>2020-07-29T00:00:00+00:00</published><updated>2020-07-29T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/07/29/DevOpsK8S</id><content type="html" xml:base="https://maruthink.github.io/2020/07/29/DevOpsK8S.html">&lt;p&gt;專案越OWN越多, JENKINS上的工作越長越多&lt;br /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-08-04T06:59:47+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
+</subtitle><author><name>maruthink</name></author><entry><title type="html">Git Tag 和 Branch name重複了</title><link href="https://maruthink.github.io/2020/08/04/gitTagAndBranch.html" rel="alternate" type="text/html" title="Git Tag 和 Branch name重複了" /><published>2020-08-04T00:00:00+00:00</published><updated>2020-08-04T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/08/04/gitTagAndBranch</id><content type="html" xml:base="https://maruthink.github.io/2020/08/04/gitTagAndBranch.html">&lt;p&gt;設定GitLab 同步mirror時&lt;br /&gt;
+一直發生如下錯誤&lt;/p&gt;
+&lt;figure class=&quot;foto-legenda&quot;&gt;
+	&lt;img src=&quot;/assets/2020/2020080400.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;查詢才發現: 原來git tag 和branch名稱相同時會有此問題&lt;br /&gt;
+在執行git push origin $branchName時就會發生錯誤&lt;br /&gt;
+最快的解決方式應該是branch更名了&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;首先保存要更名的分支內容&lt;br /&gt;
+$git checkout -b $new_branch_name origin/$branch_name&lt;/li&gt;
+  &lt;li&gt;刪除遠端分支&lt;/li&gt;
+  &lt;li&gt;push新的分支&lt;br /&gt;
+$ git push $new_branch_name&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;執行後, 所有內容都mirror過去啦!&lt;/p&gt;</content><author><name>maruthink</name></author><category term="git" /><category term="study" /><category term="gitlab" /><category term="mirror" /><summary type="html">設定GitLab 同步mirror時 一直發生如下錯誤</summary></entry><entry><title type="html">K8S練習-00</title><link href="https://maruthink.github.io/2020/07/29/DevOpsK8S.html" rel="alternate" type="text/html" title="K8S練習-00" /><published>2020-07-29T00:00:00+00:00</published><updated>2020-07-29T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/07/29/DevOpsK8S</id><content type="html" xml:base="https://maruthink.github.io/2020/07/29/DevOpsK8S.html">&lt;p&gt;專案越OWN越多, JENKINS上的工作越長越多&lt;br /&gt;
 需要更有效率的管理方式&lt;br /&gt;
 趁這次正好練習一下 kubernetes&lt;/p&gt;
 

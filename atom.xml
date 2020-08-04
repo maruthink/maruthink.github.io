@@ -34,13 +34,41 @@
  <title>Maru</title>
  <link href="https://maruthink.github.io/atom.xml" rel="self"/>
  <link href="https://maruthink.github.io/"/>
- <updated>2020-07-29T09:26:42+00:00</updated>
+ <updated>2020-08-04T06:59:47+00:00</updated>
  <id>https://maruthink.github.io</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Git Tag 和 Branch name重複了</title>
+   <link href="https://maruthink.github.io/2020/08/04/gitTagAndBranch.html"/>
+   <updated>2020-08-04T00:00:00+00:00</updated>
+   <id>https://maruthink.github.io/2020/08/04/gitTagAndBranch</id>
+   <content type="html">&lt;p&gt;設定GitLab 同步mirror時&lt;br /&gt;
+一直發生如下錯誤&lt;/p&gt;
+&lt;figure class=&quot;foto-legenda&quot;&gt;
+	&lt;img src=&quot;/assets/2020/2020080400.jpg&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;查詢才發現: 原來git tag 和branch名稱相同時會有此問題&lt;br /&gt;
+在執行git push origin $branchName時就會發生錯誤&lt;br /&gt;
+最快的解決方式應該是branch更名了&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;首先保存要更名的分支內容&lt;br /&gt;
+$git checkout -b $new_branch_name origin/$branch_name&lt;/li&gt;
+  &lt;li&gt;刪除遠端分支&lt;/li&gt;
+  &lt;li&gt;push新的分支&lt;br /&gt;
+$ git push $new_branch_name&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;執行後, 所有內容都mirror過去啦!&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>K8S練習-00</title>
