@@ -34,7 +34,7 @@
  <title>Maru</title>
  <link href="https://maruthink.github.io/atom.xml" rel="self"/>
  <link href="https://maruthink.github.io/"/>
- <updated>2020-08-04T08:27:09+00:00</updated>
+ <updated>2020-08-04T08:30:02+00:00</updated>
  <id>https://maruthink.github.io</id>
  <author>
    <name></name>
@@ -60,12 +60,9 @@
 因此抽換此WEB包需要編寫*.bb檔案&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;至WEBGUI編譯路徑, 複製原有的bb file修改
-    &lt;ul&gt;
-      &lt;li&gt;cd  ./meta-phosphor/recipes-phosphor/webui/&lt;/li&gt;
-      &lt;li&gt;cp phosphor-webui_git.bb webui-vue_git.bb&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;至WEBGUI編譯路徑, 複製原有的bb file修改  &lt;br /&gt;
+&amp;gt; cd  ./meta-phosphor/recipes-phosphor/webui/&lt;br /&gt;
+&amp;gt; cp phosphor-webui_git.bb webui-vue_git.bb&lt;/li&gt;
   &lt;li&gt;修改git repo, 以及commit ID
     &lt;figure class=&quot;foto-legenda&quot;&gt;
   &lt;img src=&quot;/assets/2020/2020080401.jpg&quot; /&gt;
@@ -111,17 +108,11 @@
 最快的解決方式應該是branch更名了&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;首先保存要更名的分支內容
-    &lt;ul&gt;
-      &lt;li&gt;git checkout -b $new_branch_name origin/$branch_name&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;首先保存要更名的分支內容&lt;br /&gt;
+&amp;gt; git checkout -b $new_branch_name origin/$branch_name&lt;/li&gt;
   &lt;li&gt;刪除遠端分支&lt;/li&gt;
-  &lt;li&gt;push新的分支
-    &lt;ul&gt;
-      &lt;li&gt;git push $new_branch_name&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;push新的分支&lt;br /&gt;
+&amp;gt; git push $new_branch_name&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;執行後, 所有內容都mirror過去啦!&lt;/p&gt;
