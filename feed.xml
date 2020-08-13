@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-08-13T07:40:31+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://maruthink.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://maruthink.github.io/" rel="alternate" type="text/html" /><updated>2020-08-13T07:44:14+00:00</updated><id>https://maruthink.github.io/feed.xml</id><title type="html">Maru</title><subtitle>Record what I learned, what I thought... everyday.
 </subtitle><author><name>maruthink</name></author><entry><title type="html">[CI]傳送建置結果至Teams</title><link href="https://maruthink.github.io/2020/08/12/jenkinsSendMsgToTeams.html" rel="alternate" type="text/html" title="[CI]傳送建置結果至Teams" /><published>2020-08-12T00:00:00+00:00</published><updated>2020-08-12T00:00:00+00:00</updated><id>https://maruthink.github.io/2020/08/12/jenkinsSendMsgToTeams</id><content type="html" xml:base="https://maruthink.github.io/2020/08/12/jenkinsSendMsgToTeams.html">&lt;p&gt;前不久使用了Teams, 發現Jenkins上也有好用的通知套件&lt;br /&gt;
 可以將建置結果傳送到Teams的頻道&lt;/p&gt;
 
@@ -22,7 +22,7 @@
 建立完之後, 點選頻道右邊的選項 &amp;gt; 選擇 &lt;strong&gt;連接器&lt;/strong&gt;&lt;/p&gt;
 
     &lt;figure class=&quot;foto-legenda&quot;&gt;
-  &lt;img src=&quot;/assets/2020/2020081301.jpg&quot; /&gt;
+  &lt;img src=&quot;/assets/2020/2020081301.jpg&quot; width=&quot;50&quot; /&gt;
 &lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
