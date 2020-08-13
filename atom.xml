@@ -34,7 +34,7 @@
  <title>Maru</title>
  <link href="https://maruthink.github.io/atom.xml" rel="self"/>
  <link href="https://maruthink.github.io/"/>
- <updated>2020-08-13T07:36:39+00:00</updated>
+ <updated>2020-08-13T07:40:31+00:00</updated>
  <id>https://maruthink.github.io</id>
  <author>
    <name></name>
@@ -77,7 +77,7 @@
     &lt;p&gt;選擇 &lt;strong&gt;傳入 Webhook&lt;/strong&gt; &amp;gt; 點選 &lt;strong&gt;設定&lt;/strong&gt;&lt;/p&gt;
 
     &lt;figure class=&quot;foto-legenda&quot;&gt;
-  &lt;img src=&quot;/assets/2020/2020081302.jpg&quot; /&gt;
+  &lt;img src=&quot;/assets/2020/2020081302.jpg&quot; width=&quot;50&quot; /&gt;
 &lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -98,7 +98,7 @@
     &lt;p&gt;記得勾選想要發送通知的狀態&lt;/p&gt;
 
     &lt;figure class=&quot;foto-legenda&quot;&gt;
-  &lt;img src=&quot;/assets/2020/2020081305.jpg&quot; widtdth=&quot;70&quot; /&gt;
+  &lt;img src=&quot;/assets/2020/2020081305.jpg&quot; width=&quot;70&quot; /&gt;
 &lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;建置後, 就可以在頻道中看到結果啦
