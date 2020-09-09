@@ -34,7 +34,7 @@
  <title>Maru</title>
  <link href="https://maruthink.github.io/atom.xml" rel="self"/>
  <link href="https://maruthink.github.io/"/>
- <updated>2020-09-09T09:14:40+00:00</updated>
+ <updated>2020-09-09T09:17:23+00:00</updated>
  <id>https://maruthink.github.io</id>
  <author>
    <name></name>
@@ -74,7 +74,7 @@
     &lt;p&gt;在裏頭設定這些工作會用到的repo&lt;/p&gt;
 
     &lt;figure class=&quot;foto-legenda&quot;&gt;
-  &lt;img src=&quot;/assets/2020/20200901.jpg&quot; /&gt;
+  &lt;img src=&quot;/assets/2020/2020090901.jpg&quot; /&gt;
 &lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -92,7 +92,7 @@
  例如: dowloadScrip(), sendReport()…etc&lt;/p&gt;
 
     &lt;figure class=&quot;foto-legenda&quot;&gt;
-  &lt;img src=&quot;/assets/2020/20200902.jpg&quot; /&gt;
+  &lt;img src=&quot;/assets/2020/2020090902.jpg&quot; /&gt;
  &lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -100,14 +100,14 @@
     &lt;p&gt;(看到她跑起來有點感動, 中間一度忘記設定id_rsa private key, 
  code一直抓不下來, debug老半天)&lt;/p&gt;
     &lt;figure class=&quot;foto-legenda&quot;&gt;
-  &lt;img src=&quot;/assets/2020/20200900.jpg&quot; /&gt;
+  &lt;img src=&quot;/assets/2020/2020090900.jpg&quot; /&gt;
  &lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h3 id=&quot;jenkins-job中的設定&quot;&gt;Jenkins job中的設定&lt;/h3&gt;
     &lt;p&gt;記得要指定在pipeline-library建立的工作資料夾(devJob)&lt;/p&gt;
     &lt;figure class=&quot;foto-legenda&quot;&gt;
-  &lt;img src=&quot;/assets/2020/20200904.jpg&quot; /&gt;
+  &lt;img src=&quot;/assets/2020/2020090904.jpg&quot; /&gt;
  &lt;/figure&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -115,7 +115,7 @@
 &lt;p&gt;最後, 按下&lt;strong&gt;建置&lt;/strong&gt;, Jenkins的pipeline工作就建立完成啦&lt;br /&gt;
 Checkout, Deploy這些stage就是在pipeline library中的內容&lt;/p&gt;
 &lt;figure class=&quot;foto-legenda&quot;&gt;
-    &lt;img src=&quot;/assets/2020/20200903.jpg&quot; /&gt;
+    &lt;img src=&quot;/assets/2020/2020090903.jpg&quot; /&gt;
    &lt;/figure&gt;
 
 &lt;p&gt;之後就可以開始好好撰寫pipeline中的工作內容囉&lt;/p&gt;
