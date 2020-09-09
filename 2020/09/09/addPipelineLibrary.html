@@ -77,7 +77,7 @@ Record what I learned, what I thought... everyday.
 決定及早將工作全數轉換成pipeline</p>
 
 <p>Jenkins上有個功能是可以把原本工作轉換成pipeline的 <br />
-但我沒有使用<br />
+但我沒有使用 <br />
 因為我打算連pipeline也都做好版本控管</p>
 
 <p>前置作業比較麻煩</p>
@@ -96,10 +96,10 @@ Record what I learned, what I thought... everyday.
  遵照jenkinsPipeline的框架即可撰寫完成</p>
 
     <p>pipeline library主要有以下兩個內容 :<br />
- #### jenkin job : 執行此pipeline會建置的工作
+ #### jenkin job : 執行此pipeline會建置的工作<br />
  #### lib : 工作會需要用到的共同Library</p>
 
-    <p>以此圖為例, devJob資料夾中, 就是Jenkins上會進行的工作內容
+    <p>以此圖為例, devJob資料夾中, 就是Jenkins上會進行的工作內容<br />
  如果之後有其他的新工作, 就可以複製此資料夾去做修改<br />
  而libs裡面主要就是撰寫這些工作會使用的共同函數<br />
  例如: dowloadScrip(), sendReport()…etc</p>
@@ -110,8 +110,9 @@ Record what I learned, what I thought... everyday.
   </li>
   <li>
     <h3 id="記得安裝-git-repo">記得安裝 <a href="https://github.com/esrlabs/git-repo">git-repo</a></h3>
-    <p>(看到她跑起來有點感動, 中間一度忘記設定id_rsa private key, 
+    <p>(看到她跑起來有點感動, 中間一度忘記設定id_rsa private key, <br />
  code一直抓不下來, debug老半天)</p>
+
     <figure class="foto-legenda">
   <img src="/assets/2020/2020090900.jpg" />
  </figure>
@@ -119,6 +120,7 @@ Record what I learned, what I thought... everyday.
   <li>
     <h3 id="jenkins-job中的設定">Jenkins job中的設定</h3>
     <p>記得要指定在pipeline-library建立的工作資料夾(devJob)</p>
+
     <figure class="foto-legenda">
   <img src="/assets/2020/2020090904.jpg" />
  </figure>
@@ -127,6 +129,7 @@ Record what I learned, what I thought... everyday.
 
 <p>最後, 按下<strong>建置</strong>, Jenkins的pipeline工作就建立完成啦<br />
 Checkout, Deploy這些stage就是在pipeline library中的內容</p>
+
 <figure class="foto-legenda">
     <img src="/assets/2020/2020090903.jpg" />
    </figure>
